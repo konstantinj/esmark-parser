@@ -1,0 +1,6 @@
+.idea/
+venv
+parser.sh
+*.csv
+*.txt
+!requirements.txt
