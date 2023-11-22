@@ -79,6 +79,9 @@ def main(url: str, year: str, week: str, separator: str):
     # from https://stackoverflow.com/questions/52400233/error-other-element-would-receive-the-click-in-python
     # cookie banner seems to block the click
     driver.execute_script("arguments[0].click();", element)
+    time.sleep(2)
+    driver.execute_script("arguments[0].click();", element)
+    time.sleep(2)
 
     select = Select(driver.find_element(By.ID, 'DateSelector'))
     visible_text = [option.text for option in select.options if f'{year} (Woche {week})' in option.text][0]

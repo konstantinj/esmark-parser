@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "esmark-parser"
+version = "1.0.0"
+description = ""
+authors = ["Konstantin <qdog86@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10.0"
+packaging = "^23.2"
+webdriver-manager = "^4.0.1"
+selenium = "^4.15.2"
+requests = "^2.16.0"
+beautifulsoup4 = "^4.12.2"
+lxml = "^4.9.3"
+
+[tool.poetry.group.dev.dependencies]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
